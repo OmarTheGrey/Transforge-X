@@ -1,6 +1,6 @@
 # Transforge-X - Windows 95 File Converter
 
-A nostalgic file conversion tool with authentic Windows 95 aesthetics and modern functionality.
+A modular, universal file conversion tool with authentic Windows 95 aesthetics and modern functionality.
 
 ![Transforge-X Screenshot](https://dulcet-kitsune-b714fb.netlify.app)
 
@@ -99,7 +99,7 @@ src/
 │   ├── ConversionQueue.tsx # File processing queue
 │   ├── SettingsPanel.tsx # Conversion settings
 │   └── StatsPanel.tsx  # Statistics and system info
-├── services/           # Business logic
+├── services/           #logic
 │   └── FileConverter.ts # File conversion engine
 ├── types/             # TypeScript definitions
 │   └── index.ts       # Type definitions
@@ -129,7 +129,7 @@ The application faithfully recreates the Windows 95 aesthetic with:
 
 - Audio and video conversion uses format container changes (full transcoding requires server-side processing)
 - Large file processing is limited by browser memory constraints
-- Some advanced document features may not be preserved during conversion
+- Some advanced document features (i.e. comments) may not be preserved during conversion
 
 ## Contributing
 
@@ -141,19 +141,4 @@ The application faithfully recreates the Windows 95 aesthetic with:
 
 ## License
 
-This project is released into the public domain under The Unlicense - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by the classic Windows 95 operating system
-- Icons provided by [Lucide React](https://lucide.dev/)
-- File processing libraries: PDF-lib, Mammoth, JSZip
-- Built with modern web technologies while honoring retro aesthetics
-
-## Live Demo
-
-Visit the live application: [https://dulcet-kitsune-b714fb.netlify.app](https://dulcet-kitsune-b714fb.netlify.app)
-
----
-
-*Experience the nostalgia of 90s computing with modern file conversion capabilities.*
+This hobby project is released into the public domain under The Unlicense - see the [LICENSE](LICENSE) file for details.
