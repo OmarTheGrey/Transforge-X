@@ -3,6 +3,7 @@
 A modular, universal file conversion tool with authentic Windows 95 aesthetics and modern functionality.
 
 ![Transforge-X Screenshot](/images/Transforge_img1.png)
+![Transforge-X Screenshot 2](/images/Transforge_img2.png)
 
 ## Features
 
