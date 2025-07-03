@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-win95-cyan font-system text-win95-black;
+    background: linear-gradient(135deg, #008080, #20b2aa);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-size: 11px;
+    font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .win95-window {
+    @apply bg-win95-gray border-2;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .win95-titlebar {
+    @apply bg-gradient-to-r from-win95-blue to-win95-darkblue text-white px-1 py-1 flex items-center justify-between text-xs font-bold;
+    background: linear-gradient(90deg, #000080, #000040);
+    height: 18px;
+  }
+
+  .win95-titlebar-inactive {
+    @apply bg-gradient-to-r from-win95-darkgray to-win95-gray text-win95-black px-1 py-1 flex items-center justify-between text-xs;
+    height: 18px;
+  }
+
+  .win95-button {
+    @apply bg-win95-gray text-win95-black text-xs px-2 py-1 border;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+  }
+
+  .win95-button:hover {
+    @apply bg-win95-lightgray;
+  }
+
+  .win95-button:active {
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+  }
+
+  .win95-button-pressed {
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+    @apply bg-win95-darkgray;
+  }
+
+  .win95-input {
+    @apply bg-white text-win95-black border px-1 py-1 text-xs;
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+    font-family: 'MS Sans Serif', sans-serif;
+  }
+
+  .win95-menu {
+    @apply bg-win95-gray border text-xs;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .win95-progress {
+    @apply bg-win95-gray border;
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+  }
+
+  .win95-progress-bar {
+    @apply bg-win95-blue h-full;
+    background: repeating-linear-gradient(
+      90deg,
+      #000080 0px,
+      #000080 2px,
+      #0000a0 2px,
+      #0000a0 4px
+    );
+  }
+
+  .win95-listbox {
+    @apply bg-white border;
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+  }
+
+  .win95-toolbar {
+    @apply bg-win95-gray border-b;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+  }
+
+  .win95-statusbar {
+    @apply bg-win95-gray border-t text-xs px-1 py-1;
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+    height: 20px;
+  }
+
+  .win95-icon {
+    @apply w-8 h-8 flex items-center justify-center;
+  }
+
+  .win95-desktop-icon {
+    @apply flex flex-col items-center text-white text-xs cursor-pointer p-1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  .win95-desktop-icon:hover {
+    @apply bg-win95-blue bg-opacity-50;
+  }
+
+  .win95-desktop-icon.selected {
+    @apply bg-win95-blue;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #dfdfdf #808080 #808080 #dfdfdf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-corner {
+  background: #c0c0c0;
+}
+
+::-webkit-scrollbar-button {
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #dfdfdf #808080 #808080 #dfdfdf;
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-button:hover {
+  background: #e0e0e0;
+}
+
+/* Selection styling */
+::selection {
+  background: #000080;
+  color: white;
+}
